@@ -6,9 +6,11 @@ import { Icon } from "react-icons-kit";
 import { shoppingCart } from "react-icons-kit/feather/shoppingCart";
 import { auth } from "../Config/Config";
 import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar({ user }) {
+  const location = useLocation();
   const history = useHistory();
 
   const handleLogout = () => {
@@ -29,7 +31,10 @@ function Navbar({ user }) {
           </Link>
         </div>
         <div className="buttons">
-          <Link to="/" className="link1">
+          <Link
+            to="/"
+            className={location.pathname === "/" ? "active" : "link1"}
+          >
             <button>Home</button>
           </Link>
           <Link to="shop" className="link1">
@@ -53,10 +58,6 @@ function Navbar({ user }) {
             <div className="buttons">
               <Link to="login" className="link">
                 <button className="auth"> LOGIN </button>
-              </Link>
-
-              <Link to="signup" className="link">
-                <button className="auth"> SIGNUP </button>
               </Link>
             </div>
           )}

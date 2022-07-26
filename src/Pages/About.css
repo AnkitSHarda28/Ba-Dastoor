@@ -1,0 +1,16 @@
+.about {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Inconsolata", monospace;
+}
+.photos1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.photos {
+  width: 40%;
+  background-color: white;
+  height: 100px;
+  border-bottom: 1.5px solid #023620;
+}

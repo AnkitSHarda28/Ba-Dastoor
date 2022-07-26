@@ -26,7 +26,7 @@ function Login() {
         setErrorMsg("");
         setTimeout(() => {
           setSuccessMsg("");
-          history.push("/");
+          history.push("/shop");
         }, 3000);
       })
       .catch((error) => {

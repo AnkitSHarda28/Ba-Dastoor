@@ -1,5 +1,5 @@
 .Navbar {
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid #023620;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -8,16 +8,17 @@
   font-family: "Inconsolata", monospace;
 }
 button {
-  background-color: #a3d4c3; /* Green */
+  background-color: #a3d4c3;
   border: none;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
   padding: 16px 32px;
+  color: #023620;
 }
 
 button:hover {
@@ -47,10 +48,11 @@ Link {
   color: white;
   border-radius: 10px;
 }
-.outer {
-  margin: 0 50px;
-}
 .link1 {
-  color: black;
   text-decoration: none;
+}
+
+.active {
+  border: 1px solid green;
+  border-radius: 10px;
 }

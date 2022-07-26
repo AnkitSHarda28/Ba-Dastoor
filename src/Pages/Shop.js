@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products";
 import { auth, fs } from "../Config/Config";
+import styled from "styled-components";
+
+const All = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+`;
 
 function Shop(props) {
   //getting current user uid
@@ -92,12 +100,13 @@ function Shop(props) {
     <div>
       <Navbar user={user} />
       <br />
+
       {products.length > 0 && (
-        <div className="container-fluid">
+        <div>
           <h1 className="text-center">Products</h1>
-          <div className="products-box">
+          <All>
             <Products products={products} addToCart={addToCart} />
-          </div>
+          </All>
         </div>
       )}
       {products.length < 1 && (
