@@ -1,20 +1,56 @@
 .Navbar {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1.5px solid black;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
+  font-family: "Inconsolata", monospace;
 }
 button {
-  background-color: black;
-  border-radius: 50px;
-  padding: 15px 32px;
+  background-color: #a3d4c3; /* Green */
+  border: none;
   text-align: center;
-  margin: 10px;
-  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 16px 32px;
 }
+
 button:hover {
+  background-color: #68b69a;
 }
 .link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: white;
+}
+.buttons {
+  display: flex;
+}
+
+.img {
+  height: 100px;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.auth {
+  background-color: #0b5334;
+  color: white;
+  border-radius: 10px;
+}
+.outer {
+  margin: 0 50px;
+}
+.link1 {
+  color: black;
   text-decoration: none;
 }

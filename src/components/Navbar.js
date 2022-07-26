@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../Images/logo.png";
+import Logo from "../Images/Logo.svg";
+import Logo1 from "../Images/Logo1.svg";
 import { Icon } from "react-icons-kit";
 import { shoppingCart } from "react-icons-kit/feather/shoppingCart";
 import { auth } from "../Config/Config";
@@ -17,27 +18,46 @@ function Navbar({ user }) {
   };
 
   return (
-    <div>
+    <div className="outer">
       {/*
       <img src={logo} alt="logo" />
       */}
       <div className="Navbar">
-        <div>
-          <h1>Ba-Dastoor</h1>
+        <div className="buttons">
+          <Link to="/">
+            <img src={Logo1} alt="logo" className="img" />
+          </Link>
+        </div>
+        <div className="buttons">
+          <Link to="/" className="link1">
+            <button>Home</button>
+          </Link>
+          <Link to="shop" className="link1">
+            <button>Shop</button>
+          </Link>
+
+          <Link to="blog" className="link1">
+            <button> Blog</button>
+          </Link>
+
+          <Link to="about" className="link1">
+            <button> About Us </button>
+          </Link>
+
+          <Link to="contact" className="link1">
+            <button> Contact</button>
+          </Link>
         </div>
         <div className="right">
           {!user && (
             <div className="buttons">
-              <button>
-                <Link to="signup" className="link">
-                  SIGNUP
-                </Link>
-              </button>
-              <button>
-                <Link to="login" className="link">
-                  LOGIN
-                </Link>
-              </button>
+              <Link to="login" className="link">
+                <button className="auth"> LOGIN </button>
+              </Link>
+
+              <Link to="signup" className="link">
+                <button className="auth"> SIGNUP </button>
+              </Link>
             </div>
           )}
         </div>

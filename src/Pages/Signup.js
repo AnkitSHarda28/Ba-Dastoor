@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { auth, fs } from "../Config/Config";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function Signup() {
   const history = useHistory();
@@ -47,58 +48,61 @@ function Signup() {
   };
 
   return (
-    <div className="container">
-      <br></br>
-      <br></br>
-      <h1>Sign Up</h1>
-      <hr></hr>
-      {successMsg && <div className="success-msg">{successMsg}</div>}
-      <br></br>
-      <form className="form-group" autoComplete="off" onSubmit={handleSignup}>
-        <label>Full Name</label>
-        <input
-          type="text"
-          className="form-control"
-          required
-          onChange={(e) => setFullName(e.target.value)}
-          value={fullName}
-        />
+    <div>
+      <Navbar />
+      <div className="container">
+        <br></br>
+        <br></br>
+        <h1>Sign Up</h1>
+        <hr></hr>
+        {successMsg && <div className="success-msg">{successMsg}</div>}
+        <br></br>
+        <form className="form-group" autoComplete="off" onSubmit={handleSignup}>
+          <label>Full Name</label>
+          <input
+            type="text"
+            className="form-control"
+            required
+            onChange={(e) => setFullName(e.target.value)}
+            value={fullName}
+          />
 
+          <br></br>
+          <label>Email</label>
+          <input
+            type="email"
+            className="form-control"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+          <br></br>
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            required
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+          <br></br>
+          <div className="btn-box">
+            <span>
+              Already have an account Login
+              <Link to="login" className="link">
+                Here
+              </Link>
+            </span>
+            <br />
+            <br />
+            <button type="submit" className="btn btn-success btn-md">
+              Sign Up
+            </button>
+          </div>
+        </form>{" "}
         <br></br>
-        <label>Email</label>
-        <input
-          type="email"
-          className="form-control"
-          required
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-        <br></br>
-        <label>Password</label>
-        <input
-          type="password"
-          className="form-control"
-          required
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-        />
-        <br></br>
-        <div className="btn-box">
-          <span>
-            Already have an account Login
-            <Link to="login" className="link">
-              Here
-            </Link>
-          </span>
-          <br />
-          <br />
-          <button type="submit" className="btn btn-success btn-md">
-            Sign Up
-          </button>
-        </div>
-      </form>{" "}
-      <br></br>
-      {errorMsg && <div className="error-msg">{errorMsg}</div>}
+        {errorMsg && <div className="error-msg">{errorMsg}</div>}
+      </div>
     </div>
   );
 }
