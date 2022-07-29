@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
 .Navbar {
   border-bottom: 1.5px solid #023620;
   width: 100%;
@@ -17,13 +19,15 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
-  padding: 16px 32px;
+  padding: 8px 32px;
   color: #023620;
 }
 
 button:hover {
   background-color: #68b69a;
+  color: black;
 }
+
 .link {
   text-decoration: none;
   color: white;
@@ -53,6 +57,6 @@ Link {
 }
 
 .active {
-  border: 1px solid green;
   border-radius: 10px;
+  background-color: #68b69a;
 }

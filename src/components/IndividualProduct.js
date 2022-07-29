@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./IndividualProduct.css";
 
 const Container = styled.div`
   height: 300px;
@@ -45,13 +46,21 @@ function IndividualProduct({ individualProduct, addToCart }) {
     addToCart(individualProduct);
   };
   return (
-    <Container>
-      <Logo src={individualProduct.url} alt="product-image" />
-      <H1>{individualProduct.title}</H1>
-      <H2>{individualProduct.description}</H2>
-      <div>₹{individualProduct.price}</div>
-      <Button onClick={handleAddToCart}>ADD TO CART</Button>
-    </Container>
+    <div className="Container">
+      <img src={individualProduct.url} alt="product-image" className="Image" />
+      <div className="desc">
+        <div className="name">
+          <h1>{individualProduct.title}</h1>
+        </div>
+        <h2>{individualProduct.description}</h2>
+        <div className="bottom">
+          <div className="H2">₹{individualProduct.price}</div>
+          <button className="b1 " onClick={handleAddToCart}>
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

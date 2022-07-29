@@ -1,0 +1,43 @@
+.Container {
+  height: 350px;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #a3d4c3;
+}
+.Image {
+  width: 230px;
+  height: 230px;
+}
+
+.name {
+  margin: 2px 0 0 0;
+}
+
+h1 {
+  font-size: 17px;
+}
+h2 {
+  font-size: 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b1 {
+  border: 1px solid green;
+  justify-content: center;
+  height: 30px;
+  width: auto;
+  font-size: 10px;
+}
+.desc {
+  margin: 5px 10px;
+}
+
+.outer {
+  justify-content: center;
+  align-items: center;
+}

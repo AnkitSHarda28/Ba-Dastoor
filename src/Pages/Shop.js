@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar";
 import Products from "../components/Products";
 import { auth, fs } from "../Config/Config";
 import styled from "styled-components";
+import "./Shop.css";
 
 const All = styled.div`
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
 `;
 
 function Shop(props) {
@@ -97,7 +97,7 @@ function Shop(props) {
   };
 
   return (
-    <div>
+    <div className="ankit">
       <Navbar user={user} />
       <br />
 
