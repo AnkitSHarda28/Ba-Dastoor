@@ -88,7 +88,9 @@ function Contact(props) {
   return (
     <div>
       <Navbar user={user} />
-      Contact
+      <div>
+        <h1 className="TopHead">Contact Us</h1>
+      </div>
     </div>
   );
 }

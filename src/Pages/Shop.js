@@ -4,6 +4,7 @@ import Products from "../components/Products";
 import { auth, fs } from "../Config/Config";
 import styled from "styled-components";
 import "./Shop.css";
+import Loader from "../components/Loader/Loader";
 
 const All = styled.div`
   display: grid;
@@ -103,14 +104,14 @@ function Shop(props) {
 
       {products.length > 0 && (
         <div>
-          <h1 className="text-center">Products</h1>
+          <h1 className="TopHead">Our Products</h1>
           <All>
             <Products products={products} addToCart={addToCart} />
           </All>
         </div>
       )}
       {products.length < 1 && (
-        <div className="container-fluid">Please wait ....</div>
+        <Loader/>
       )}
     </div>
   );

@@ -63,7 +63,7 @@ function Login() {
           <br></br>
           <div className="btn-box">
             <span>
-              Don't have an account SignUp
+              Don't have an account? SignUp .
               <Link to="signup" className="link">
                 Here
               </Link>

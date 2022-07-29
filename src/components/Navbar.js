@@ -49,7 +49,6 @@ function Navbar({ user }) {
             <button
               className={location.pathname === "/blog" ? "active" : "link1"}
             >
-              {" "}
               Blog
             </button>
           </Link>
@@ -83,10 +82,10 @@ function Navbar({ user }) {
         </div>
 
         {user && (
-          <div>
+          <div className="login">
             <div>
               <Link className="navlink" to="/">
-                {user}
+                <span class="wave">👋</span> {user}
               </Link>
             </div>
             <div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { auth, fs } from "../Config/Config";
 import Navbar from "../components/Navbar";
 import CartProducts from "../components/CartProducts";
+import "./Cart.css";
 
 function Cart() {
   //getting a current user function
@@ -99,7 +100,7 @@ function Cart() {
       <br />
       {cartProducts.length > 0 && (
         <div>
-          <h1>Cart</h1>
+          <h1 className="TopHead">Cart</h1>
           <div>
             <CartProducts
               cartProducts={cartProducts}

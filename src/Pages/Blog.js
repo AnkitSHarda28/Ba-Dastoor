@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { auth, fs } from "../Config/Config";
 import Product from "../components/Product";
+import Loader from "../components/Loader/Loader";
 
 function Blog(props) {
   function GetUserUid() {
@@ -87,8 +88,10 @@ function Blog(props) {
   return (
     <div>
       <Navbar user={user} />
-      <Product />
-      Blog
+      <div>
+        <h1 className="TopHead">Blog</h1>
+      </div>
+      Feedbacks{products.length < 1 && <Loader />}
     </div>
   );
 }

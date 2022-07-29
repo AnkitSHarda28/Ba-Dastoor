@@ -1,0 +1,19 @@
+.Image {
+  width: 230px;
+  height: 230px;
+}
+.SingleCart {
+  text-align: center;
+  font-size: 12px;
+  align-items: center;
+  border: 1px solid black;
+  width: 230px;
+  margin: 20px 0;
+}
+.H1 {
+  font-size: 15px;
+}
+.reed {
+  background-color: rgb(155, 24, 24);
+  color: white;
+}

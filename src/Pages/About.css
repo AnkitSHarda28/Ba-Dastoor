@@ -1,16 +1,56 @@
-.about {
-  text-align: center;
-  font-size: 50px;
-  font-family: "Inconsolata", monospace;
+.TopHead {
+  font-size: 30px;
+  margin: 10px 0;
 }
-.photos1 {
+.intro {
   display: flex;
-  justify-content: space-around;
+  border-bottom: 1.5px solid #023620;
+}
+.group {
+  height: 400px;
+  padding: 5px;
+  margin: 40px 0;
+  border-radius: 50px;
 }
 
-.photos {
-  width: 40%;
-  background-color: white;
-  height: 100px;
+.what {
+  margin: 40px auto;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.what2 {
   border-bottom: 1.5px solid #023620;
+  margin: 40px 0;
+}
+
+.question {
+  font-size: 25px;
+}
+.further {
+  font-size: 12px;
+  margin: 20px 0;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.member {
+  margin: 5px 0;
+}
+
+.mm {
+  height: 250px;
+  width: 220px;
+}
+.position {
+  font-size: 12px;
+  font-style: italic;
 }
