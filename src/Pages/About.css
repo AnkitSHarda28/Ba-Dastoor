@@ -2,6 +2,7 @@
   font-size: 30px;
   margin: 10px 0;
 }
+
 .intro {
   display: flex;
   border-bottom: 1.5px solid #023620;
@@ -30,7 +31,7 @@
   font-size: 25px;
 }
 .further {
-  font-size: 12px;
+  font-size: 15px;
   margin: 20px 0;
 }
 
@@ -54,4 +55,51 @@
 .position {
   font-size: 12px;
   font-style: italic;
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .group {
+    height: 220px;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what {
+    width: 90%;
+  }
+  .member {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .group {
+    height: 200px;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what {
+    width: 90%;
+  }
+  .member {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .group {
+    height: 300px;
+    margin: 10px 50px;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .what {
+    width: 80%;
+  }
+  .member {
+    padding: 5px;
+  }
 }

@@ -98,7 +98,6 @@ function About(props) {
 
   return (
     <div>
-      <Navbar user={user} />
       <h1 className="TopHead">About Us</h1>
       <div className="intro">
         <img src={P4} alt="" className="group" />
