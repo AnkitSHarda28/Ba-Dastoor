@@ -41,6 +41,7 @@ function Navbar({ user }) {
             <Link to="/">
               <button
                 className={location.pathname === "/" ? "active" : "link1"}
+                id="abbb"
               >
                 Home
               </button>
