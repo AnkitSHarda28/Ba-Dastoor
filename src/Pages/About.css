@@ -5,6 +5,7 @@
 .intro {
   display: flex;
   border-bottom: 1.5px solid #023620;
+  justify-content: space-between;
 }
 .group {
   height: 400px;
