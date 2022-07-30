@@ -87,12 +87,13 @@ function Signup() {
           />
           <br></br>
           <div className="btn-box">
-            <span>
-              Already have an account Login
-              <Link to="login" className="link">
-                Here
+            <span>Already have an account? </span>
+            <div>
+              Login &nbsp;
+              <Link to="signup" className="link">
+                here
               </Link>
-            </span>
+            </div>
             <br />
             <br />
             <button type="submit" className="btn btn-success btn-md">

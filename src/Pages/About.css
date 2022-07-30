@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 500px) and (max-width: 700px) {
   .group {
-    height: 220px;
+    height: 210px;
   }
   .team {
     display: grid;
@@ -88,8 +88,12 @@
   }
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
   .group {
-    height: 300px;
+    height: 350px;
     margin: 10px 50px;
   }
   .team {
@@ -101,5 +105,28 @@
   }
   .member {
     padding: 5px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .group {
+    height: 220px;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .what {
+    width: 80%;
+  }
+  .member {
+    padding: 5px;
+  }
+  .mm {
+    height: 200px;
   }
 }

@@ -6,12 +6,6 @@ import styled from "styled-components";
 import "./Shop.css";
 import Loader from "../components/Loader/Loader";
 
-const All = styled.div`
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-`;
-
 function Shop(props) {
   //getting current user uid
 
@@ -105,14 +99,12 @@ function Shop(props) {
       {products.length > 0 && (
         <div>
           <h1 className="TopHead">Our Products</h1>
-          <All>
+          <div className="ADDP">
             <Products products={products} addToCart={addToCart} />
-          </All>
+          </div>
         </div>
       )}
-      {products.length < 1 && (
-        <Loader/>
-      )}
+      {products.length < 1 && <Loader />}
     </div>
   );
 }

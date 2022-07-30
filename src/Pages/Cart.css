@@ -1,19 +1,39 @@
-.Image {
-  width: 230px;
-  height: 230px;
-}
 .SingleCart {
   text-align: center;
   font-size: 12px;
   align-items: center;
-  border: 1px solid black;
-  width: 230px;
-  margin: 20px 0;
+  background-color: #62caa5;
+  width: 250px;
+  margin: 40px 0;
+}
+.insider {
+  padding: 10px;
+}
+.Image111 {
+  width: 220px;
+  height: 220px;
 }
 .H1 {
-  font-size: 15px;
+  font-size: 17px;
 }
-.reed {
-  background-color: rgb(155, 24, 24);
-  color: white;
+.Descrr {
+  font-size: 10px;
+}
+.cross {
+  background-color: red;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: -30px 220px;
+  cursor: pointer;
+}
+.bbtn {
+  height: 40px;
+  width: 20px;
+  background-color: antiquewhite;
+  font-size: 20px;
 }

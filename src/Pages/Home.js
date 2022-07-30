@@ -8,6 +8,7 @@ import V2 from "../Images/V2.png";
 import P1 from "../Images/1.png";
 import P2 from "../Images/2.png";
 import P3 from "../Images/3.png";
+import Brand from "../Images/brand.svg";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -97,23 +98,18 @@ function Home(props) {
 
   return (
     <div>
-      <Navbar user={user} />
       <div>
+        <Navbar user={user} />
         <div className="pageTop">
           <div className="leftSide">
+            <div>
+              <img src={Brand} alt="" height={400} className="svgImg" />
+            </div>
             <div className="title">The Brand of Nature</div>
             <div className="butn">
               <Link to="shop">
                 <button className="shopNow">Shop Now</button>
               </Link>
-            </div>
-            <div className="circles">
-              <div className="circle c3">
-                <h1 className="txt">Made in India</h1>
-              </div>
-              <div className="circle c2">
-                <h1 className="txt1">Natural Products</h1>
-              </div>
             </div>
           </div>
           <div className="rightSide">
