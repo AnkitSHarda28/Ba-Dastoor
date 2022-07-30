@@ -2,11 +2,13 @@
 
 .Navbar {
   border-bottom: 1.5px solid #023620;
-  width: 100%;
+  width: min(100%-2rem);
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  overflow: hidden;
   font-family: "Inconsolata", monospace;
 }
 button {
@@ -102,5 +104,15 @@ Link {
   } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .link1 {
+    font-size: 15px;
   }
 }

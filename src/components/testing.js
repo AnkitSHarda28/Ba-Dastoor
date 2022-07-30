@@ -1,19 +1,29 @@
 import React from "react";
+import "./testing.css";
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 function testing() {
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-      explicabo dolores nihil quae, dolorem earum sequi dolore porro. Atque,
-      libero est. Tempora aliquid pariatur nemo at facere veritatis omnis et
-      voluptatibus, labore ipsa, placeat ducimus tempore quam laudantium!
-      Reprehenderit rerum eaque sunt fugit ab autem neque non tempora ullam
-      veritatis qui quo culpa, aut voluptate voluptatibus. Expedita, rerum
-      similique dolorem totam doloremque fugiat eveniet commodi enim ut itaque
-      repudiandae magni porro aspernatur obcaecati magnam est nulla hic,
-      voluptatibus ipsum culpa aperiam tempore dicta. Deserunt et optio maxime
-      dolores dolor soluta! Nostrum placeat error quae iusto officiis provident
-      consequatur odio. Nisi!
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">
+          Home
+        </a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
   );
 }

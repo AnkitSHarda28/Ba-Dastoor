@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Footer1 = styled.div`
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   left: 0;
   background-color: blur;
   position: fixed;

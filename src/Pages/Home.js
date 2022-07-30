@@ -133,9 +133,6 @@ function Home(props) {
           </div>
         </div>
 
-        <div className="page3">
-          <Carousel />
-        </div>
         <Footer />
       </div>
     </div>
