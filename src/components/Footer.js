@@ -8,7 +8,7 @@ const Footer1 = styled.div`
   background-color: blur;
   position: fixed;
   text-align: center;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
   padding: 2px;
 `;
 
