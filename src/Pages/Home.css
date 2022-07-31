@@ -152,4 +152,11 @@
     text-align: center;
     justify-content: center;
   }
+  .svgImg {
+    height: 250px;
+  }
+  .photo {
+    height: 220px;
+    width: 300px;
+  }
 }
