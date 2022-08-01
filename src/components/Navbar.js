@@ -28,9 +28,6 @@ function Navbar({ user }) {
   return (
     <div>
       <div className="outer">
-        {/*
-      <img src={logo} alt="logo" />
-      */}
         <div className="Navbar">
           <div className="buttons">
             <Link to="/">

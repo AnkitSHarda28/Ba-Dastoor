@@ -2,7 +2,7 @@
   height: 350px;
   width: 250px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 40px 0;
   background-color: #a3d4c3;
 }
 .Image {
@@ -13,12 +13,17 @@
 .name {
   margin: 2px 0 0 0;
 }
+.pname {
+  height: 40px;
+}
+.pdesc {
+}
 
 h1 {
   font-size: 17px;
 }
 h2 {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .bottom {
