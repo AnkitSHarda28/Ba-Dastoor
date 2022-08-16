@@ -55,7 +55,7 @@ function Navbar({ user }) {
               <button
                 className={location.pathname === "/blog" ? "active" : "link1"}
               >
-                Blog
+                Feedback
               </button>
             </Link>
 

@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
+import "./Contact.css";
 import Navbar from "../components/Navbar";
 import { auth, fs } from "../Config/Config";
+import Insta from "../Images/Insta.svg";
+import Gmail from "../Images/Gmail.svg";
+import Linkedin from "../Images/Linkedin.svg";
+import Twitter from "../Images/Twitter.svg";
 
 function Contact(props) {
   function GetUserUid() {
@@ -90,6 +95,32 @@ function Contact(props) {
       <Navbar user={user} />
       <div>
         <h1 className="TopHead">Contact Us</h1>
+      </div>
+      <div className="socials">
+        <a href="https://www.instagram.com/_ba.dastoor/" target="_blank">
+          <img src={Insta} width={100} height={100} alt="fb" className="imge" />
+        </a>
+        <a href="mailto:dastoor.ba.in@gmail.com" target="_blank">
+          <img src={Gmail} width={70} height={70} alt="fb" className="imge" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ba-dastoor-india-992a30246/"
+          target="_blank"
+        >
+          <img
+            src={Linkedin}
+            width={70}
+            height={70}
+            alt="fb"
+            className="imge"
+          />
+        </a>
+        <a
+          href="https://help.twitter.com/en/using-twitter/twitter-search-not-working"
+          target="_blank"
+        >
+          <img src={Twitter} width={70} height={70} alt="fb" className="imge" />
+        </a>
       </div>
     </div>
   );

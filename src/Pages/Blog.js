@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Blog.css";
 import Navbar from "../components/Navbar";
 import { auth, fs } from "../Config/Config";
 import Product from "../components/Product";
@@ -89,9 +90,18 @@ function Blog(props) {
     <div>
       <Navbar user={user} />
       <div>
-        <h1 className="TopHead">Blog</h1>
+        <h1 className="TopHead">Feedback</h1>
       </div>
-      Feedbacks{products.length < 1 && <Loader />}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">
+              We are currently working on our feedback page...
+            </h3>
+          </div>
+        </div>
+      </div>
+      {products.length < 1 && <Loader />}
     </div>
   );
 }
