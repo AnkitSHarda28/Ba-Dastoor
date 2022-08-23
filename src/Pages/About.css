@@ -72,6 +72,9 @@
   .member {
     padding: 5px;
   }
+  .further {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 500px) {
   .group {
@@ -86,6 +89,9 @@
   }
   .member {
     padding: 5px;
+  }
+  .further {
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
