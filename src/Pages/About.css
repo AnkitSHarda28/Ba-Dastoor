@@ -31,8 +31,9 @@
   font-size: 25px;
 }
 .further {
-  font-size: 15px;
-  margin: 20px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .team {

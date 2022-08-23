@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { auth, fs } from "../Config/Config";
 import Product from "../components/Product";
 import Loader from "../components/Loader/Loader";
+import Footer from "../components/Footer";
 
 function Blog(props) {
   function GetUserUid() {
@@ -92,16 +93,104 @@ function Blog(props) {
       <div>
         <h1 className="TopHead">Feedback</h1>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h3 class="animate-charcter">
-              We are currently working on our feedback page...
-            </h3>
+      <section id="testimonials">
+        <div class="testimonial-heading">
+          <h4>Our Top Reviews</h4>
+        </div>
+        <div class="testimonial-box-container">
+          <div class="testimonial-box">
+            <div class="box-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1071/1071164.png" />
+                </div>
+                <div class="name-user">
+                  <strong>Ankit Sharda</strong>
+                  <span>@ankitsharda</span>
+                </div>
+              </div>
+
+              <div class="reviews">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, quaerat quis? Provident temporibus architecto
+                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
+                tenetur voluptates incidunt blanditiis sed atque cumque.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="box-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1507/1507155.png" />
+                </div>
+                <div class="name-user">
+                  <strong>Noah Wood</strong>
+                  <span>@noahwood</span>
+                </div>
+              </div>
+
+              <div class="reviews">⭐⭐⭐</div>
+            </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, quaerat quis? Provident temporibus architecto
+                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
+                tenetur voluptates incidunt blanditiis sed atque cumque.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="box-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="https://cdn-icons-png.flaticon.com/512/7070/7070249.png" />
+                </div>
+                <div class="name-user">
+                  <strong>Oliver Queen</strong>
+                  <span>@oliverqueen</span>
+                </div>
+              </div>
+              <div class="reviews">⭐⭐⭐⭐</div>
+            </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, quaerat quis? Provident temporibus architecto
+                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
+                tenetur voluptates incidunt blanditiis sed atque cumque.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-box">
+            <div class="box-top">
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="https://cdn-icons-png.flaticon.com/512/743/743424.png" />
+                </div>
+                <div class="name-user">
+                  <strong>Barry Allen</strong>
+                  <span>@barryallen</span>
+                </div>
+              </div>
+              <div class="reviews">⭐⭐⭐⭐</div>
+            </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, quaerat quis? Provident temporibus architecto
+                asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam
+                tenetur voluptates incidunt blanditiis sed atque cumque.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      {products.length < 1 && <Loader />}
+      </section>
+      <Footer />
     </div>
   );
 }

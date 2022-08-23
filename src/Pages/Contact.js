@@ -6,6 +6,8 @@ import Insta from "../Images/Insta.svg";
 import Gmail from "../Images/Gmail.svg";
 import Linkedin from "../Images/Linkedin.svg";
 import Twitter from "../Images/Twitter.svg";
+import Whatsapp from "../components/Whatsapp";
+import Footer from "../components/Footer";
 
 function Contact(props) {
   function GetUserUid() {
@@ -122,6 +124,8 @@ function Contact(props) {
           <img src={Twitter} width={70} height={70} alt="fb" className="imge" />
         </a>
       </div>
+      <Whatsapp />
+      <Footer />
     </div>
   );
 }

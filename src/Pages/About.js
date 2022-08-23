@@ -130,8 +130,7 @@ function About(props) {
           <p className="further">
             Small enterprises are recognised for offering low-cost items because
             the majority of them are home-grown and do not require expensive
-            inputs. Promoting these would not be expensive, and we would be able
-            to recoup the expenditures via our activities.
+            inputs.
           </p>
           <p className="further">
             We want to highlight the environmentally conscious small enterprises
@@ -139,7 +138,7 @@ function About(props) {
             access metro cities for a variety of reasons. This will also be our
             contribution to the Made in India programme, which encourages rural
             development. We will provide our consumers non-toxic, organic, less
-            expensive, and less industrialised items at lower prices.
+            expensive, and less industrialised items.
           </p>
         </div>
       </div>
